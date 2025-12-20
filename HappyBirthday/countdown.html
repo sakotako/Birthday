@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakeru HappyBirthday</title>
+
+  <link rel="stylesheet" href="css/countdown.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="countdown">
+      <h1 class="countdown-title">Countdown to
+        <span id="year" class="new-year"></span>
+      </h1>
+      <div class="time-container">
+        <p class="time"><span id="days" class="time-num"></span>days</p>
+        <p class="time"><span id="hours" class="time-num"></span>hours</p>
+        <p class="time"><span id="minutes" class="time-num"></span>minutes</p>
+        <p class="time"><span id="seconds" class="time-num"></span>seconds</p>
+      </div>
+    </div>
+    <div id="balloons" class="balloons">
+      <div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div id="signin" class="signin">
+      <a class="signin_wrapper" href="index.html">next &raquo;</a>
+    </div>
+  </div>
+
+  <div id="audio" class="audio">
+    <div class="audio_wrapper">
+      <audio id="audio_start" src="music/HappyBirthday.mp3" loop>
+        あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+      </audio>
+    </div>
+  </div>
+
+  <script src="scripts/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Kakeru HappyBirthday</title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css"  media="screen and (min-width: 480px)"　/> <!-- スクロールCSS -->
+	<link href="css/stapel.css" rel="stylesheet" type="text/css" /> <!-- フォトギャラリーCSS -->
+  <script src="scripts/signin.js"></script> <!-- サインインJS -->
+  <script src="scripts/modernizr.custom.63321.js"></script> <!-- フォトギャラリーJS -->
+  <script src="scripts/particles.min.js"></script> <!-- 背景JS -->
+  <script src="scripts/setting.js"></script> <!-- 背景JS -->
+</head>
+
+<body>
+	<header id="header">
+		<!-- <p id="scrollNum">スクロール値：0</p> -->
+		<!-- <div id="signin_container">
+			<div class="form-structor">
+				<div class="signin">
+					<h2 class="form-title">Sign in</h2>
+					<div class="form-holder">
+						<input type="password" id="password" class="input" placeholder="記念日 (例)19990101" />
+					</div>
+					<button class="submit-btn button2" id="signinButton">Let's go！</button>
+				</div>
+			</div>
+		</div> -->
+	</header>
+
+	<main id="main" class="main_hidden">
+		<!-- <div id="bg0" data-0="" data-end=""></div>
+		<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+		<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+		<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div> -->
+		<section id="bg" class="sp_none" data-0="" data-end="">
+			<div id="particles-js-main">
+				<div class="bg_container"></div>
+			</div>
+		</section>
+
+		<section id="intro" data-0="opacity:1;top:0%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+			<div class="intro_wrapper">
+				<!-- <h1>Happy Birthday</h1> -->
+				<div class="intro_title">
+					<img src="images/item/HappyBirthday.png" alt="">
+				</div>
+				<h2>かける誕生日おめでとう🎉🎉</h2>
+				<p>おれの誕生日でTikTokの動画作ってくれたときめちゃくちゃ嬉しかった🥹<br>
+					仕事を活かせれるのすごいなって思っておれもホームページ作ってみた！<br>
+					まだまだクオリティは低いけど、俺なりに頑張ってみたけん見てみて〜！
+				</p>
+				<p class="arrows">▼&nbsp;▼&nbsp;▼</p>
+			</div>
+			<canvas id="birthdayCV" class="sp_none"></canvas>
+		</section>
+
+		<section id="birthday" data-0="display:none;" data-500="display:block;" data-1500="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-2500="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-6600="top:0%;" data-8600="top:-100%;">
+			<div id="birthday_wrapper" data-500="left:100%" data-1200="left:25%;">
+				<h2>1998 / 11 / 26 〜 2025 / 11 / 26</h2>
+			</div>
+			<div id="birthday_wrapper_sub" data-500="left:100%" data-1200="left:25%;">
+				<p>Happy 27th birthday.</p>
+				<p>May this day be a <span data-500="" data-1500="color[swing]:rgb(0,0,0);" data-2500="color:rgb(255,255,0);">special one</span> for you, Kakeru.</p>
+				<p data-2500="opacity:0;font-size:100%;" data-3100="opacity:1;font-size:110%;">27回目の誕生日。<br>かけるにとって特別な日になりますように！</p>
+			</div>
+
+			<div class="drop nonDrop" data-2700="left:30%;opacity:0;font-size:100%;" data-3100="bottom:37%;opacity:1;font-size:150%;">生まれてから今日で...</div>
+			<div class="drop" data-3100="left:50%;bottom[WTF]:100%;" data-6100="bottom:35%;">9</div>
+			<div class="drop" data-3100="left:55%;bottom[quadratic]:100%;" data-6100="bottom:35%;">8</div>
+			<div class="drop" data-3100="left:60%;bottom[bounce]:100%;" data-6100="bottom:35%;">6</div>
+			<div class="drop" data-3100="left:65%;bottom[cubic]:100%;" data-6100="bottom:35%;">2</div>
+			<div class="drop nonDrop" data-2700="left:70%;opacity:0;font-size:100%;" data-3100="bottom:37%;opacity:1;font-size:150%;">日目！</div>
+
+			<div class="">
+
+			</div>
+		</section>
+
+		<section id="video" data-8800="top:0%;opacity:0;" data-12000="opacity:1;" data-14000="" data-16000="top:-100%;opacity:0;" >
+			<div class="video-wrapper">
+				<video src="videos/2024/11月/MOV_0435.mp4#t=0.1" muted loop playsinline autoplay></video>
+				<div class="video-content">
+					<!-- <h2>2024 / 11 / 24</h2> -->
+					<p>かけると付き合ってからも気づけば1年が経ったね！
+						<br>西荻で初めて待ち合わせした時のことは一生忘れんやろな笑
+						<br>お互いほとんど顔知らん状態でよく会ったよね...笑
+						<br>まさかその後もほぼ毎週会って、まさか付き合うとは🥹
+						<br>1年経っても変わらず楽しくてもっと好きになってんだよな〜
+						<br>花火大会の日に頑張って告白してよかった😏😏😏</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery" data-16000="top:100%;opacity:0;" data-18000="top:25%;opacity:1;" data-20000="" data-22000="top:-100%;opacity:0;">
+			<div class="container">
+				<ul id="tp-grid" class="tp-grid">
+					<!-- 2024 -->
+					<li data-pile="2024"> <a href="gallery2024.html" target="_blank"> <span class="tp-info"> <span>Photo</span> </span> <img src="images/gallery/2024image.jpeg" /> </a> </li>
+					<li data-pile="2024"> <a href="gallery2024video.html" target="_blank"> <span class="tp-info"> <span>Movie</span> </span> <img src="images/gallery/2024video.jpg" /> </a> </li>
+					<!-- <li data-pile="2024"> <a> <span class="tp-info"> <span></span> </span> <img src="images/gallery/1/3.jpg" /> </a> </li> -->
+					<!-- 2025 -->
+					<li data-pile="2025"> <a href="gallery2025.html" target="_blank"> <span class="tp-info"> <span>Photo</span> </span> <img src="images/gallery/2025image.jpeg" /> </a> </li>
+					<li data-pile="2025"> <a href="gallery2025video.html" target="_blank"> <span class="tp-info"> <span>Movie</span> </span> <img src="images/gallery/2025video.jpg" /> </a> </li>
+					<!-- <li data-pile="2025"> <a> <span class="tp-info"> <span></span> </span> <img src="images/gallery/2/3.jpg" /> </a> </li> -->
+					<!-- 2026 -->
+					<li data-pile="2026" class="clickOff"> <span class="tp-info"> <span>Coming soon...</span> </span> <img src="images/gallery/nodata.jpg" /> </li>
+					<!-- 2027〜 -->
+					<li data-pile="2027〜" class="clickOff"> <span class="tp-info"> <span>この先もずっと...</span> </span> <img src="images/gallery/nodata.jpg" /> </li>
+				</ul>
+				<div class="topbar"> <span id="close" class="back">&larr;</span> </div>
+			</div>
+		</section>
+
+		<section id="present" data-21500="top:0%;opacity:0;" data-23500="opacity:1;" data-28000="" data-30000="top:-100%;opacity:0;">
+			<div class="present_wrapper">
+				<div class="present_title" data-23000="top:10%;transform:scale(0) rotate(0deg);" data-25000="transform:scale(1) rotate(1440deg);opacity:1;">
+					<img src="images/item/present.png" alt="">
+				</div>
+				<ul class="present_flexbox" data-25000="top:100%;right:0;left:0;opacity:0;" data-27000="top:50%;opacity:1;">
+					<li>
+						<a id="modal1" class="modal-open-button" onclick="clickModal1()"><img src="images/item/present1.png" alt=""></a>
+						<div class="modal mozaiku_back1" id="modalWin1">
+							<div class="modal-wrapper">
+								<span id="closeSpan" onclick="clickClose()">&times;</span>
+								<div class="modal-content">
+									<div class="present_title">
+										<img src="images/item/present.png" alt="">
+									</div>
+									<p>まずは1つ目！<br>
+										かけるちゃんに似合うだろうなーて思って買ったよ！<br>
+										かなりかなり悩んだね...<br>
+										気に入ってくれるといいな〜🥹<br>
+										さぁ何を買ったでしょう！<br>
+										一応今までの会話で出てきたことはある！覚えてないかもやけど笑<br>
+										正解はさこちゃんから直接受け取ってね！！！
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a id="modal2" class="modal-open-button" onclick="clickModal2()"><img src="images/item/present2.png" alt=""></a>
+						<div class="modal" id="modalWin2">
+							<div class="modal-wrapper">
+								<span id="closeSpan" onclick="clickClose()">&times;</span>
+								<div class="modal-content">
+									<div class="present_title">
+										<img src="images/item/present.png" alt="">
+									</div>
+									<p>続いて2つ目は.......<br>
+										なんと...........あの...............<br>
+										<span class="mozaiku2">マグロマート</span> に行くよーーーー！！！！！<br>
+										11/30 予約取れたけん空けててね！！
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a id="modal3" class="modal-open-button" onclick="clickModal3()"><img src="images/item/present3.png" alt=""></a>
+						<div class="modal" id="modalWin3">
+							<div class="modal-wrapper">
+								<span id="closeSpan" onclick="clickClose()">&times;</span>
+								<div class="modal-content">
+									<div class="present_title">
+										<img src="images/item/present.png" alt="">
+									</div>
+									<p>そして最後は..............<br>
+										なんだと思う？？？？？<br>
+										正解は......... <span class="mozaiku3">ディズニー</span> に行くよーーー！！！<br>
+										<span class="mozaiku3_sub">
+											やっぱりビリーヴは一緒に見たい！！<br>
+											でも一緒は初めてのランドもありだなあ。。<br>
+											そこはまた話し合って決めよっか！<br>
+											最近遊びの日に雨のこと多いし。。<br>
+											日程もまた一緒に決めよー！！
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<canvas id="birthdayCV2" class="sp_none"></canvas>
+		</section>
+
+		<section id="letter" data-29000="top:100%;opacity:0;" data-31000="top:0%;opacity:1;" data-32000="" data-34000="top:-100%;opacity:0;">
+			<div class="letter">
+				<div class="letter-content">
+					<p>かけるへ
+						<br>27歳の誕生日おめでとう！！！
+						<br>今年もお祝いできて嬉しい！プレゼント喜んでくれたかな..？🥹
+						<br>かけるのいつも笑かしてくれるとことか、楽しそうに話してるとことか、意外と(笑)周り見てて優しいとことか、全部が好き！でも1番はやっぱりかけるの笑顔が好きだなあ。こっちまで明るい気持ちになれるし、怒ってても許してしまうし笑
+						<br>これから先もずっとその笑顔が見れていけたらおれは幸せだよん。（やめてくれないとことか無茶振りしつこいとことかは少し抑えてくれたらなあなんて。。最近多いし😅）
+						<br>なかなか会えない時期もあったりで寂しい時もあるけど、お互い頑張ろうね。
+						<br>かけると付き合って後悔なんてしたことないしむしろいつも幸せをありがとう。
+						<br>かけるは最高の彼氏だよ！早く一緒に住もうね🫶
+						<br>付き合ってもう1年かあ。早かったようで長かったような。。でもかけるのおかげで毎日が楽しくて、俺の生きがいになってるよ。こんな俺と出会ってくれて、今日まで一緒にいてくれて本当にありがとう。そしてこれからも一緒にいてください。
+						<br>改めて、いじっぱりで怒りっぽくて素直じゃない俺だけど、これだけは素直に言わせて！
+						<br>ほんとにほんとにかけるちゃんのことが大好きでたまりません！これから先もずーーっと大好きです！🫶🫶🫶
+						<br>
+						<br><span class="letter_from">毛穴人中お化けのさこちゃんより</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="fin" data-33000="top:100%;opacity:0;" data-35000="top:0%;opacity:1;" data-36000="">
+			<div id="countdown" class="countdown">
+				<a class="countdown_wrapper" href="countdown.html" target="_blank">next &raquo;<br>2026 / 11 / 26</a>
+			</div>
+		</section>
+
+		<div id="audio" class="audio">
+			<div class="audio_wrapper">
+				<audio id="audio_start" src="music/BGM.mp3" controls loop>
+					あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+				</audio>
+			</div>
+		</div>
+		<!-- <div id="scrollNum" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div> -->
+		<a id="pagetop" class="pagetop"><div class="pagetop__arrow"></div></a>
+		<div id="scrollbar" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+	</main>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="scripts/happybirthday.js"></script> <!-- happybirthdayJS -->
+	<script data-main="scripts/main" src="scripts/require.js"></script> <!-- スクロールJS -->
+	<script type="text/javascript" src="scripts/jquery.stapel.js"></script>　<!-- フォトギャラリーJS -->
+
+	<script type="text/javascript">
+		// $(document).ready(function() {
+		// 	$(window).scroll(function() {
+		// 		$('#scrollNum').text('スクロール値：' + $(this).scrollTop());
+		// 	});
+		// });
+		function noscroll(e){
+			e.preventDefault();
+		}
+		// ページ更新
+		$(window).load(function(){
+			document.getElementById('main').classList.remove('main_hidden');
+			// トップに移動
+			// window.location.hash = '#'
+			// window.scrollTo(0, 0);
+			// スクロール制御ON
+			// document.addEventListener('touchmove', noscroll, {passive: false});
+			// document.addEventListener('wheel', noscroll, {passive: false});
+		});
+
+		$("#pagetop").click(function(){
+  		window.scrollTo(0, 0);
+  	});
+
+		// フォトギャラリー
+		$(function() {
+	    var $grid = $('#tp-grid'),
+	        $name = $('#name'),
+	        $close = $('#close'),
+	        $loader = $(
+	            '<div class="loader"><i></i><i></i><i></i><i></i><i></i><i></i><span>Loading...</span></div>'
+	        ).insertBefore($grid),
+	        stapel = $grid.stapel({
+	            randomAngle: true,
+	            delay: 50,
+	            gutter: 70,
+	            pileAngles: 5,
+	            onLoad: function() {
+	                $loader.remove();
+	            },
+	            onBeforeOpen: function(pileName) {
+	                $name.html(pileName);
+	            },
+	            onAfterOpen: function(pileName) {
+	                $close.show();
+									// スクロール制御ON
+									document.addEventListener('touchmove', noscroll, {passive: false});
+									document.addEventListener('wheel', noscroll, {passive: false});
+	            }
+	        });
+			$close.on('click', function() {
+			    $close.hide();
+			    $name.empty();
+			    stapel.closePile();
+					// スクロール制御OFF
+					document.removeEventListener('touchmove', noscroll);
+					document.removeEventListener('wheel', noscroll);
+			});
+		});
+
+		// プレゼント
+		// 画像クリックでモーダルを表示するイベント
+		function clickModal1() {
+			$("#modalWin1").addClass("modalActive");
+  		$(".modal-wrapper").addClass("modal-wrapperActive");
+			// スクロール制御ON
+			document.addEventListener('touchmove', noscroll, {passive: false});
+			document.addEventListener('wheel', noscroll, {passive: false});
+		}
+		function clickModal2() {
+			$("#modalWin2").addClass("modalActive");
+  		$(".modal-wrapper").addClass("modal-wrapperActive");
+  		$(".mozaiku2").addClass("mozaiku");
+  		$("#modalWin2").addClass("modalWin2_mozaiku");
+			// スクロール制御ON
+			document.addEventListener('touchmove', noscroll, {passive: false});
+			document.addEventListener('wheel', noscroll, {passive: false});
+		}
+		function clickModal3() {
+			$("#modalWin3").addClass("modalActive");
+  		$(".modal-wrapper").addClass("modal-wrapperActive");
+  		$(".mozaiku3").addClass("mozaiku");
+  		$(".mozaiku3_sub").addClass("mozaiku_sub");
+  		$("#modalWin3").addClass("modalWin3_mozaiku");
+			// スクロール制御ON
+			document.addEventListener('touchmove', noscroll, {passive: false});
+			document.addEventListener('wheel', noscroll, {passive: false});
+		}
+		// クローズボタンを押したらモーダルを閉じる
+		function clickClose() {
+			$(".modal").removeClass("modalActive");
+  		$(".modal-wrapper").removeClass("modal-wrapperActive");
+			// スクロール制御OFF
+			document.removeEventListener('touchmove', noscroll);
+			document.removeEventListener('wheel', noscroll);
+		}
+	</script>
+
+</body>
+
+</html>
